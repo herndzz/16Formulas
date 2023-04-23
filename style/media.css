@@ -1,0 +1,28 @@
+header a {
+    display: none;
+}
+
+.card {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    width: auto;
+    height: 200px;
+}
+
+.card:hover{
+    transform: translate3d(0px, 20px, 0px);
+}
+
+.card a{
+    padding-top: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.card p {
+    display: none;
+}
