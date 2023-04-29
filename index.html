@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     
-    <!--Font Link-->
+    <!--Link da Fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">    
     
+    <script defer src="js/script.js"></script>
+
     <title>16 Fórmulas</title>
 </head>
 <body>
     <header>
-        <h2>√ 16 Fórmulas</h2>
-        <nav>
-            <a href="./pages/reduced-equation.html" target="" rel="noopener noreferrer">REDUCED LINE EQUATION</a>
-            <a href="./pages/distance-points.html" target="" rel="noopener noreferrer">DISTANCE BETWEEN POINTS</a>
-            <a href="./pages/bhaskara.html" target="" rel="noopener noreferrer">BHASKARA</a>
-        </nav>
+        <div class="navbar-container">
+            <div class="logo-container">
+                <!--<img id="img-logo" src="img/Calculator_icon.svg" alt="">-->
+                <a id="logo" href="index.html"><h2>√ 16 Fórmulas</h2></a>
+            </div>
+            <nav>
+                <li><a href="../pages/reduced-equation.html">Equação Reduzida Reta</a></li>
+                <li><a href="../pages/distance-points.html">Distancia Entre Pontos</a></li>
+                <li><a href="../pages/bhaskara.html">Baskara</a></li>
+            </nav>
+        </div>
     </header>
-    <hr>
-    <h1>Latest Implementations:</h1>
-    <section>
-        <div id="card-1" class="card">
-            <a href="./pages/reduced-equation.html" target="_blank" rel="noopener noreferrer">Equação Reduzida da Reta</a>
-            <img src="./img/reduced-equation.webp" alt="" srcset="">
-            <p>A equação reduzida da reta é y = mx + n, em que x e y são, respectivamente, a variável independente e a variável dependente; m é o coeficiente angular, e n é o coeficiente linear.</p>
-        </div>
-        <div id="card-2" class="card">
-            <a href="./pages/distance-points.html" target="_blank" rel="noopener noreferrer">Distância Entre Pontos</a>
-            <img src="./img/distance-points.webp" alt="" srcset="">
-            <p>Essa fórmula pode ser deduzida a partir do teorema de Pitágoras, aplicando-o ao triângulo formado pelos dois pontos e a linha que os une.</p>
-        </div>
-        <div id="card-3" class="card">
-            <a href="./pages/bhaskara.html" target="_blank" rel="noopener noreferrer">Baskara</a>
-            <img src="./img/bhaskara.jpg" alt="" srcset="">
-            <p>A fórmula de Bhaskara é uma fórmula utilizada para encontrar as raízes de uma equação quadrática, que é uma equação do tipo ax^2 + bx + c = 0</p>
-    </section>
+    <!--<hr>-->
+    <h1>Últimas Implementações:</h1>
+    <div class="elemento-principal">
+        <section class="formulas">
+            <div id="reduced-card" class="card" onclick="link1()">
+                <h2>1:<br> 
+                    Equação Reduzida da Reta</h2>
+                <p>A equação reduzida da reta é y = mx + n, em que x e y são, respectivamente, a variável independente e a variável dependente; m é o coeficiente angular, e n é o coeficiente linear.</p>
+            </div>
+            <div id="distance-card" class="card" onclick="link2()">
+                <h2>2:<br> 
+                    Distância Entre Pontos</h2>
+                <p>Essa fórmula pode ser deduzida a partir do teorema de Pitágoras, aplicando-o ao triângulo formado pelos dois pontos e a linha que os une.</p>
+            </div>
+            <div id="bhaskara-card" class="card" onclick="link3()">
+                <h2>3:<br> 
+                    Baskara</h2>
+                <p>A fórmula de Bhaskara é uma fórmula utilizada para encontrar as raízes de uma equação quadrática, que é uma equação do tipo ax^2 + bx + c = 0.</p>
+        </section>
+    </div>
 </body>
 </html>
