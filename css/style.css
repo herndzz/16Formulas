@@ -25,15 +25,15 @@ body {
 
 /*Header*/
 #logo {
-    height: 34px;
-    width: 144px;
+    height: 45px;
+    width: 95px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    padding: 10px 20px 5px 20px;
 }
 
 header a {
@@ -108,4 +108,39 @@ section {
 
 h1 {
     margin: 10px 20px;
+}
+
+/* !! MEDIA !! */
+@media (max-width: 767px) {
+    header a {
+        display: none;
+    }
+    
+    section {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card {
+        display: flex;
+        justify-content: flex-start;
+        width: 60vh;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .card a{
+        padding-top: 8px;
+        text-align: center;
+    }
+    
+    .card img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .card p {
+        display: none;
+    }
 }
